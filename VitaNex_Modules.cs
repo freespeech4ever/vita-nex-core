@@ -161,7 +161,9 @@ namespace VitaNex
 
 			foreach (var cmi in Modules.OrderBy(cmi => cmi.Priority))
 			{
+				ToConsole("Invoking {0}", cmi);
 				InvokeModule(cmi);
+				ToConsole("Finished with {0}", cmi);
 			}
 		}
 

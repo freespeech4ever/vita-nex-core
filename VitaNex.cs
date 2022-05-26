@@ -620,7 +620,7 @@ namespace VitaNex
 
 			try
 			{
-				action.Method.Invoke(null, null);
+				action.Method.Invoke(action.Target, null);
 			}
 			catch (Exception e)
 			{
